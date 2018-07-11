@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homeRelativeLayout"
+    tools:context="io.github.httpsphoenix30.gruptack.HomeScreen">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/groups_recyclerView" />
+
+        <View
+            android:id="@+id/homeView"
+            android:layout_width="match_parent"
+            android:background="@color/homeTrans"
+            android:visibility="invisible"
+            android:layout_height="match_parent"/>
+
+
+    </FrameLayout>
+
+
+    <!--
+    <com.github.ag.floatingactionmenu.OptionsFabLayout
+        android:id="@+id/fab_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:color="@color/colorAccent"
+        app:options_color="@color/colorPrimary"
+        app:src="@drawable/ic_add_black_24dp"
+        app:options_menu="@menu/homefloat" />
+        -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/logoutText"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:padding="4dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="88dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/createText"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Create"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:padding="4dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="88dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="22dp"
+        android:src="@drawable/ic_exit_to_app_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="22dp"
+        android:src="@drawable/ic_person_add_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="22dp"
+        android:src="@drawable/ic_add_black_24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "955465270847",
+    "firebase_url": "https://gruptack.firebaseio.com",
+    "project_id": "gruptack",
+    "storage_bucket": "gruptack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955465270847:android:77db4926046ccf9f",
+        "android_client_info": {
+          "package_name": "io.github.httpsphoenix30.gruptack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955465270847-2tkqfuk2hi2b680q6tl5cuqj5jdi51st.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.httpsphoenix30.gruptack",
+            "certificate_hash": "0b4c9013ce531173cc8856f55b2334a5004718d2"
+          }
+        },
+        {
+          "client_id": "955465270847-vo510qa4elk1gf6ejue28n350js2tru2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3mBasGa6jtBPVnrCavYwJLrNfYoIxoHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955465270847-vo510qa4elk1gf6ejue28n350js2tru2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

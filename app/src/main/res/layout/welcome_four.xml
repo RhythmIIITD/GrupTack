@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:background="#429CC3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/post"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/postfiveonetwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/gruptackname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GrupTack"
+        android:fontFamily="@font/roboto"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/post"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Get Started"
+        android:fontFamily="@font/roboto"
+        android:layout_below="@+id/gruptackname"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="70dp"
+            android:layout_gravity="center"
+            app:cardUseCompatPadding="true">
+            <ImageView
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:onClick="onClick"
+                android:layout_gravity="center"
+                android:src="@drawable/search"/>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:indicatorColor="#000000"
+                style="@style/AVLoadingIndicatorView.Large"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:indicatorName="LineSpinFadeLoaderIndicator" />
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="Sign In to continue" />
+    </LinearLayout>
+
+</RelativeLayout>
